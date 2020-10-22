@@ -15,8 +15,10 @@ int main(int argc, char *argv[]) {
         options = utils::parse_args(argc, argv);
     } catch (std::range_error &err) {
         std::cerr << err.what() << std::endl;
+        std::cout << help_msg << std::endl;
         return EXIT_FAILURE;
     } catch (std::invalid_argument &err) {
+        std::cout << help_msg << std::endl;
         return EXIT_FAILURE; // getopt_long print error message
     }
 

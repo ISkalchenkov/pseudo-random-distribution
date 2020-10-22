@@ -12,6 +12,7 @@ The program evenly and deterministically outputs to the console a line from the 
 ## Build
 ```shell
 $ git clone https://github.com/ISkalchenkov/pseudo-random-distribution.git
+$ cd pseudo-random-distribution
 $ mkdir build && cd build
 $ cmake ..
 $ make

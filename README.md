@@ -21,3 +21,8 @@ Example:
 ```shell
 $ ./prd --file ../example/studentList.txt --numtickets 30 --parameter 73
 ```
+***
+### Result with parameter = 24
+![parameter24](https://github.com/ISkalchenkov/pseudo-random-distribution/blob/main/imgs/parameter_24.png)
+### Result with parameter = 170
+![parameter170](https://github.com/ISkalchenkov/pseudo-random-distribution/blob/main/imgs/parameter_170.png)

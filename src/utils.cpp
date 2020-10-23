@@ -67,6 +67,11 @@ utils::Options utils::parse_args(int argc, char *argv[]) {
                 throw std::invalid_argument("prd: unrecognized option");
         }
     }
+
+    if (options.file_path.empty() || options.num_tickets <= 0) {
+        throw std::invalid_argument("prd: invalid arguments");
+    }
+
     return options;
 }
 

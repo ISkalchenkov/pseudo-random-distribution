@@ -18,12 +18,7 @@ int main(int argc, char *argv[]) {
         std::cout << help_msg << std::endl;
         return EXIT_FAILURE;
     } catch (std::invalid_argument &err) {
-        std::cout << help_msg << std::endl;
-        return EXIT_FAILURE; // getopt_long print error message
-    }
-
-    if (options.file_path.empty() || options.num_tickets <= 0) {
-        std::cerr << "prd: invalid arguments" << std::endl;
+        std::cerr << err.what() << std::endl;
         std::cout << help_msg << std::endl;
         return EXIT_FAILURE;
     }
